@@ -41,9 +41,9 @@ class Header extends Component {
                 <GiHamburgerMenu className='ham-menu' onClick={() => this.handleClick()}/>
                 <nav className={this.state.menuDisplayed ? 'nav show' : 'nav'}>
                     <ul>
-                        <Link to='/'> <li>INICIO</li> </Link>
-                        <Link to='/guitars'> <li>GUITARRAS</li> </Link>
-                        <Link to='/cesta'>
+                        <Link to='/' onClick={() => this.handleClick()}> <li>INICIO</li> </Link>
+                        <Link to='/guitars' onClick={() => this.handleClick()}> <li>GUITARRAS</li> </Link>
+                        <Link to='/cesta' onClick={() => this.handleClick()}>
                             <div className='cesta-container'>
                                 <p className='cesta-numero' style={this.context.cart.length === 0 ? { display: 'none' } : { display: 'block' }}>
                                     {this.context.cart.length}

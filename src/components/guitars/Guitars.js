@@ -7,7 +7,7 @@ import { ProductContext } from '../../context';
 class Guitars extends Component {
 
     static contextType = ProductContext
-
+    
     render() {
         const {price, minPrice, maxPrice, handleChange} = this.context
         console.log(this.context)

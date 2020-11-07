@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {FaTwitter} from 'react-icons/fa'
 import {FaPhone} from 'react-icons/fa';
 import {MdEmail} from 'react-icons/md';
 import{Link} from 'react-router-dom';
 
 const CartMensaje = () => {
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
+
     return(
         <div className='compra-container'>
             <h3>Tu compra ha sido realizada con éxito</h3>
