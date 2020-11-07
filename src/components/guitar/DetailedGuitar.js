@@ -24,6 +24,7 @@ class DetailedGuitar extends Component {
         const guitar = getGuitar(this.state.slug)
         this.setGuitar(guitar)
         this.selectImg(guitar.img1, 1)
+        window.scrollTo(0,0)
     }
 
     selectImg = (img, number) => {

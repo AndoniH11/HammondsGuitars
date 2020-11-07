@@ -9,6 +9,10 @@ class Cart extends Component {
 
     static contextType = ProductContext
 
+    componentDidMount() {
+        window.scrollTo(0,0)
+    }
+
     emptyTemplate = () => {
         return (
             <div className='cesta-vacia'>

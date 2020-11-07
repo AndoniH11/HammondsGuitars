@@ -7,6 +7,10 @@ class GuitarList extends React.Component {
 
     static contextType = ProductContext
 
+    componentDidMount() {
+        window.scrollTo(0,0)
+    }
+
     render() {
         const {displayedGuitars, setSlug} = this.context
 
